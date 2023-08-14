@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/wiseLlama0/Chronos#readme",
   "dependencies": {
-    "discord.js": "^14.12.1"
+    "discord.js": "^14.12.1",
+    "node": "^20.5.0"
   }
 }
