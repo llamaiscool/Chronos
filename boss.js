@@ -49,11 +49,14 @@ class Boss {
         }
 
         if (this.spawnTimestamp - now.getTime() < 1000) return this.name + " -- Open now";
-        else return this.name + " in "
+        else {
+            console.log("window in future for " + this.name)
+            return this.name + " in "
                     +   (days == 0) ? "" : (days + " day" + ((days > 1) ? "s" : "") + ", ")
                     +   (hours == 0) ? "" : (hours + " day" + ((hours > 1) ? "s" : "") + ", ") 
                     +   (minutes == 0) ? "" : (minutes + " day" + ((minutes > 1) ? "s" : "") + ", ") 
                     +   (seconds == 0) ? "" : (seconds + " day" + ((seconds > 1) ? "s" : "") + ", ") 
+    }
     }
 
     // getTimeRemainingUntilClosed() {
