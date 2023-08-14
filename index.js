@@ -9,7 +9,6 @@ const color = {
 }
 
 const Discord = require('discord.js');
-const DATA = require('./data.js');
 const client = new Discord.Client(
   {intents: [
     "GUILDS",
