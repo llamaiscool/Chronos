@@ -23,10 +23,13 @@ class Boss {
         const milliseconds_per_hour = 60 * 60 * 1000;
         const milliseconds_per_minute = 60 * 1000;
         const milliseconds_per_second = 1000;
-        let days, hours, minutes, seconds = 0;
+        let days = 0;
+        let hours = 0;
+        let minutes = 0
+        let seconds = 0;
 
         while (true) {
-            if      (remaining - milliseconds_per_day >= 0) {
+            if (remaining - milliseconds_per_day >= 0) {
                 days++;
                 remaining -= milliseconds_per_day;
             }
@@ -52,9 +55,9 @@ class Boss {
         else {
             console.log("window in future for " + this.name)
             const days_string = (days == 0) ? "" : (days + " day" + ((days > 1) ? "s" : "") + ", ")
-            const hours_string = (hours == 0) ? "" : (hours + " day" + ((hours > 1) ? "s" : "") + ", ")
-            const minutes_string = (minutes == 0) ? "" : (minutes + " day" + ((minutes > 1) ? "s" : "") + ", ")
-            const seconds_string = (seconds == 0) ? "" : (seconds + " day" + ((seconds > 1) ? "s" : "") + ", ")
+            const hours_string = (hours == 0) ? "" : (hours + " hour" + ((hours > 1) ? "s" : "") + ", ")
+            const minutes_string = (minutes == 0) ? "" : (minutes + " minute" + ((minutes > 1) ? "s" : "") + ", ")
+            const seconds_string = (seconds == 0) ? "" : (seconds + " seconds" + ((seconds > 1) ? "s" : "") + ", ")
             const return_string = this.name + " in " + days_string + hours_string + minutes_string + seconds_string;
             console.log("returning: ", return_string);
             return return_string
