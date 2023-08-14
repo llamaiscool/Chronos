@@ -70,7 +70,7 @@ client.on('messageCreate', msg => {
         const embed = new Discord.EmbedBuilder()
         .setTitle("Timers")
         .setColor(color.green)
-        .setDescription();
+        .setDescription(message);
         client.channels.cache.get(channel_id).send({embeds: [embed]});
     }
     else {
