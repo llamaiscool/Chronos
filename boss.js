@@ -60,7 +60,6 @@ class Boss {
             return return_string
         }
     }
-    }
 
     // getTimeRemainingUntilClosed() {
     //     return this.getCloseTime() - Date.getTime();
