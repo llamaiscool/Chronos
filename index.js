@@ -56,7 +56,7 @@ function handleNameError(name) {
 
 client.on('messageCreate', msg => {
     //exit if the author is a bot
-    if(message.author.bot){
+    if(msg.author.bot){
       return;
     }
 
