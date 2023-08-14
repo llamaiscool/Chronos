@@ -65,7 +65,8 @@ client.on('messageCreate', msg => {
         //fetch timers
         let message = ""
         for (const boss in bosses) {
-            message += boss.getTimeUntilBossIsOpen + "\n"
+            const b = bosses[boss]
+            message += b.getTimeUntilBossIsOpen() + "\n"
         }
         const embed = new Discord.EmbedBuilder()
         .setTitle("Timers")
