@@ -74,13 +74,13 @@ client.on('messageCreate', msg => {
         client.channels.cache.get(channel_id).send({embeds: [embed]});
     }
     else {
-        //const boss = bosses[msg.content];
-        //if (boss === null || boss === undefined) return handleNameError(msg.content);
+        const boss = bosses[msg.content];
+        if (boss === null || boss === undefined) return handleNameError(msg.content);
         
         //rest boss timer
-        //boss.resetTimer();
+        boss.resetTimer();
         const embed = new Discord.EmbedBuilder()
-        //.setTitle("Reset timer for " + boss.name)
+        .setTitle("Reset timer for " + boss.name)
         .setColor(color.green)
         .setDescription("Replaying message: " + msg.content);
         client.channels.cache.get(channel_id).send({embeds: [embed]});
