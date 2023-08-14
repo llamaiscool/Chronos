@@ -55,6 +55,11 @@ function handleNameError(name) {
 }
 
 client.on('messageCreate', msg => {
+    //exit if the author is a bot
+    if(message.author.bot){
+      return;
+    }
+    
     if(msg.content === "Soon") {
         //fetch timers
         let message = ""
