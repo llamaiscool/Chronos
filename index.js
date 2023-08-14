@@ -25,6 +25,7 @@ client.login(process.env.BOT_TOKEN);
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
+    setup();
   });
 
 let bosses = {}
@@ -38,7 +39,9 @@ function setup() {
             continue;
         }
         bosses[name] = boss;
+        console.log("registered boss " + name + "!\n");
     }
+    console.log("setup complete!\n");
 }
 
 function handleNameError(name) {
