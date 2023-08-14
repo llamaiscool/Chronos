@@ -17,7 +17,7 @@ class Boss {
     getTimeUntilBossIsOpen() {
         if (this.spawnTimestamp == null) return this.name + " -- unknown";
         const now = new Date();
-        const remaining =  this.spawnTimestamp - now.getTime();
+        let remaining =  this.spawnTimestamp - now.getTime();
         
         const milliseconds_per_day = 24 * 60 * 60 * 1000;
         const milliseconds_per_hour = 60 * 60 * 1000;
