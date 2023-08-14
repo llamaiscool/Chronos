@@ -52,10 +52,10 @@ class Boss {
         else {
             console.log("window in future for " + this.name)
             const return_string = this.name + " in "
-                    +   ((days == 0) ? "" : (days + " day" + ((days > 1) ? "s" : "") + ", "))
-                    +   ((hours == 0) ? "" : (hours + " day" + ((hours > 1) ? "s" : "") + ", "))
-                    +   ((minutes == 0) ? "" : (minutes + " day" + ((minutes > 1) ? "s" : "") + ", "))
-                    +   ((seconds == 0) ? "" : (seconds + " day" + ((seconds > 1) ? "s" : "") + ", "))
+                    +   (days == 0) ? "" : (days + " day" + ((days > 1) ? "s" : "") + ", ")
+                    +   (hours == 0) ? "" : (hours + " day" + ((hours > 1) ? "s" : "") + ", ")
+                    +   (minutes == 0) ? "" : (minutes + " day" + ((minutes > 1) ? "s" : "") + ", ")
+                    +   (seconds == 0) ? "" : (seconds + " day" + ((seconds > 1) ? "s" : "") + ", ")
             console.log("returning: ", return_string);
             return return_string
         }
