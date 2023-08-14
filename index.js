@@ -46,7 +46,7 @@ function handleNameError(name) {
       .setTitle("Boss name '" + name + "' not recognized\n")
       .setColor(color.yellow)
       .setDescription("Please double check the spelling\n");
-    client.channels.get(channel_id).send({embeds: [embed]});
+    client.channels.cache.get(channel_id).send({embeds: [embed]});
 }
 
 client.on('messageCreate', msg => {
@@ -60,7 +60,7 @@ client.on('messageCreate', msg => {
         .setTitle("Timers")
         .setColor(color.green)
         .setDescription();
-        client.channels.get(channel_id).send({embeds: [embed]});
+        client.channels.cache.get(channel_id).send({embeds: [embed]});
     }
     else {
         const boss = bosses[msg.content];
@@ -73,6 +73,6 @@ client.on('messageCreate', msg => {
         .setTitle("Reset timer for " + boss.name)
         .setColor(color.green)
         .setDescription("");
-        client.channels.get(channel_id).send({embeds: [embed]});
+        client.channels.cache.get(channel_id).send({embeds: [embed]});
     }
   });
