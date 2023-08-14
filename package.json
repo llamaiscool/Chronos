@@ -1,0 +1,22 @@
+{
+  "name": "chronos",
+  "version": "1.0.0",
+  "description": "by Llama",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://wiseLlama0@github.com/wiseLlama0/Chronos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wiseLlama0/Chronos/issues"
+  },
+  "homepage": "https://github.com/wiseLlama0/Chronos#readme",
+  "dependencies": {
+    "discord.js": "^14.12.1"
+  }
+}
