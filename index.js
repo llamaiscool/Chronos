@@ -34,7 +34,7 @@ function setup() {
     console.log("starting setup\n");
     for (const enemy in bossData) {
         console.log("enemy: ", enemy);
-        const boss = new Boss(enemy.name, enemy.respawnTime, enemy.windowLength);
+        const boss = new Boss(bosses[enemy].name, bosses[enemy].respawnTime, bosses[enemy].windowLength);
         const name = boss.name;
         if (bosses[name]) {
             console.error("error: duplicate boss name " + name + ". Ignoring duplicate.");
