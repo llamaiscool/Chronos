@@ -1,7 +1,7 @@
 require('dotenv').config();
 const Boss = require("./boss.js")
 const bossData = require("./bosses.json");
-const channel_id = "1139671716088524810";
+const channel_id = "704576493753204739";//"1139671716088524810";
 
 const color = {
     green: 0x40f56a,
@@ -59,7 +59,7 @@ client.on('messageCreate', msg => {
     if(message.author.bot){
       return;
     }
-    
+
     if(msg.content === "Soon") {
         //fetch timers
         let message = ""
