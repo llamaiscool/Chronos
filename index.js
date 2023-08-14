@@ -17,11 +17,16 @@ const client = new Discord.Client(
   ]}
 );
 
+
+  
+
+//login!
+console.log('logging in')
+client.login(process.env.BOT_TOKEN);
+
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
   });
-  
-client.login(process.env.token);
 
 let bosses = {}
 
