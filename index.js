@@ -83,7 +83,7 @@ client.on('messageCreate', msg => {
         const embed = new Discord.EmbedBuilder()
         .setTitle("Reset timer for " + boss.name)
         .setColor(color.green)
-        .setDescription("Replaying message: " + msg.content);
+        .setDescription("This boss will respawn in " + boss.getTimeUntilBossIsOpen() + "\n");
         client.channels.cache.get(channel_id).send({embeds: [embed]});
     }
   });
