@@ -68,7 +68,7 @@ client.on('messageCreate', msg => {
         const embed = new Discord.MessageEmbed()
         .setTitle("Reset timer for " + boss.name)
         .setColor(color.green)
-        .setDescription("Y");
+        .setDescription("");
         client.channels.cache.get(channel_id).send({embeds: [embed]});
     }
   });
