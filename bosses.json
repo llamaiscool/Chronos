@@ -1,0 +1,27 @@
+{
+    "unox": {
+        "name": "215",
+        "respawnTime": 133,
+        "windowLenngth": 10
+    },
+    "revanant": {
+        "name": "210",
+        "respawnTime": 130,
+        "windowLenngth": 10
+    },
+    "cragskor": {
+        "name": "205",
+        "respawnTime": 120,
+        "windowLenngth": 10
+    },
+    "krothur": {
+        "name": "200",
+        "respawnTime": 110,
+        "windowLenngth": 10
+    },
+    "grom": {
+        "name": "195",
+        "respawnTime": 100,
+        "windowLenngth": 10
+    }
+}
