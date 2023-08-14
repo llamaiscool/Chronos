@@ -44,7 +44,7 @@ function setup() {
 function handleNameError(name) {
     const embed = new Discord.EmbedBuilder()
       .setTitle("Boss name '" + name + "' not recognized\n")
-      .setColor(color.red)
+      .setColor(color.yellow)
       .setDescription("Please double check the spelling\n");
     client.channels.get(channel_id).send({embeds: [embed]});
 }
@@ -58,7 +58,7 @@ client.on('messageCreate', msg => {
         }
         const embed = new Discord.EmbedBuilder()
         .setTitle("Timers")
-        .setColor(color.Green)
+        .setColor(color.green)
         .setDescription();
         client.channels.get(channel_id).send({embeds: [embed]});
     }
