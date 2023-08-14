@@ -41,7 +41,7 @@ function setup() {
 }
 
 function handleNameError(name) {
-    const embed = new Discord.MessageEmbed()
+    const embed = new Discord.EmbedBuilder()
       .setTitle("Boss name '" + name + "' not recognized\n")
       .setColor(color.red)
       .setDescription("Please double check the spelling\n");
@@ -55,7 +55,7 @@ client.on('messageCreate', msg => {
         for (const boss in bosses) {
             message += boss.getTimeUntilBossIsOpen + "\n"
         }
-        const embed = new Discord.MessageEmbed()
+        const embed = new Discord.EmbedBuilder()
         .setTitle("Timers")
         .setColor(color.Green)
         .setDescription();
@@ -68,7 +68,7 @@ client.on('messageCreate', msg => {
         //rest boss timer
         boss.resetTimer();
 
-        const embed = new Discord.MessageEmbed()
+        const embed = new Discord.EmbedBuilder()
         .setTitle("Reset timer for " + boss.name)
         .setColor(color.green)
         .setDescription("");
